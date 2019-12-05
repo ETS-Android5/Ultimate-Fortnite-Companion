@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+        android:id="@+id/feat1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:padding="4dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/legendary_g">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/feat1image"
+                android:layout_above="@+id/feat1price"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/feat1name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/feat1image"
+                android:background="#a5484848"
+                android:fontFamily="@font/fortnite"
+                android:gravity="center"
+                android:text="LOVE RANGER"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="#00051F"/>
+
+            <TextView
+                android:id="@+id/feat1price"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="2,000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="#00051f"/>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_vbucks"
+                android:layout_alignBottom="@id/feat1price"
+                android:layout_toLeftOf="@id/feat1price"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feat1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/legendary_g">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feat1image"
+                    android:layout_above="@+id/feat1price"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:id="@+id/feat1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignBottom="@+id/feat1image"
+                    android:background="#a5484848"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="LOVE RANGER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00051F"/>
+
+                <TextView
+                    android:id="@+id/feat1price"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="2,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="#00051f"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/icon_vbucks"
+                    android:layout_alignBottom="@id/feat1price"
+                    android:layout_toLeftOf="@id/feat1price"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

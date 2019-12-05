@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topHalf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:background="@color/darkGrey2">
+
+        <!-- Player 1 (left) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Card for wins -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/wins"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/Wins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:text="0000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Wins"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/kodchasan_reg"
+                        android:text="Wins"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Card for tops -->
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:layout_height="0dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/darkGrey2">
+
+                <RelativeLayout
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingVertical="7dp">
+
+                    <!-- MAKE AN IF STATEMENT IF THE NUMBER IS > 1000 THEN MAKE THE FONT SMALLER-->
+                    <TextView
+                        android:id="@+id/Top2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:gravity="center_horizontal"
+                        android:text="000"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/top2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Top2"
+                        android:layout_alignLeft="@+id/Top2"
+                        android:fontFamily="@font/kodchasan_reg"
+                        android:text="Top 5"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/Top3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:layout_above="@id/top3"
+                        android:gravity="center_horizontal"
+                        android:text="000"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/top3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/kodchasan_reg"
+                        android:gravity="center"
+                        android:text="Top 10"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- Player 2 (right) -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- Card for wins -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/winsp2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/cardp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/Winsp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:text="0000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/titlep2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Winsp2"
+                        android:gravity="center"
+                        android:fontFamily="@font/kodchasan_reg"
+                        android:text="Wins"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Card for tops -->
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:layout_height="0dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/darkGrey2">
+
+                <RelativeLayout
+                    android:id="@+id/card2p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingVertical="7dp">
+
+                    <!-- MAKE AN IF STATEMENT IF THE NUMBER IS > 1000 THEN MAKE THE FONT SMALLER-->
+                    <TextView
+                        android:id="@+id/Top2p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/top2p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Top2p2"
+                        android:layout_alignLeft="@+id/Top2p2"
+                        android:fontFamily="@font/kodchasan_reg"
+                        android:gravity="center"
+                        android:text="Top 5"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/Top3p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/top3p2"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/top3p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/kodchasan_reg"
+                        android:gravity="center"
+                        android:text="Top 10"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Bottom page stats. the part in light grey -->
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="27dp"
+        android:background="@color/offwhite">
+
+        <TextView
+            android:id="@+id/Kills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="32sp"
+            android:fontFamily="@font/kodchasan_bold"
+            android:text="0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/kodchasan_reg"
+            android:text="Kills"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Kills"/>
+
+        <TextView
+            android:id="@+id/Kd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:fontFamily="@font/kodchasan_bold"
+            android:text="0.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/kodchasan_reg"
+            android:text="K/d"
+            android:layout_below="@+id/Kd"/>
+
+        <TextView
+            android:id="@+id/KPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/kodchasan_bold"
+            android:text="0.0"
+            android:textSize="32sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/kodchasan_reg"
+            android:text="KPM"
+            android:layout_below="@+id/KPM"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_above="@id/winP"
+            android:id="@+id/WinP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/kodchasan_bold"
+            android:text="0 %"/>
+        <TextView
+            android:id="@+id/winP"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/kodchasan_reg"
+            android:text="Win %"/>
+
+        <TextView
+            android:id="@+id/AvgScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:fontFamily="@font/kodchasan_bold"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/avgScore"
+            android:text="000"/>
+        <TextView
+            android:id="@+id/avgScore"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/kodchasan_reg"
+            android:text="Avg Score"
+            android:layout_alignLeft="@+id/AvgScore"/>
+
+        <TextView
+            android:id="@+id/TotalScore"
+            android:layout_above="@id/totalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/kodchasan_bold"
+            android:text="000k"
+            android:textSize="32sp" />
+        <TextView
+            android:id="@+id/totalScore"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/kodchasan_reg"
+            android:text="Score"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout> -->
+
+    <!-- STATS - BODY 2 -->
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:background="@color/offwhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/kills"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="2dp"
+                android:fontFamily="@font/kodchasan_bold"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Kills"
+                android:textColor="@color/darkGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Kills"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/kodchasan_reg"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="0"
+                android:textColor="@color/darkGrey2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/Killsp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textColor="@color/darkGrey2"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:fontFamily="@font/kodchasan_bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/kd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="K/d"
+                android:textSize="13sp"
+                android:textColor="@color/darkGrey"/>
+            <TextView
+                android:id="@+id/Kd"
+                android:fontFamily="@font/kodchasan_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0.00"
+                android:textSize="16sp"
+                android:textColor="@color/darkGrey2"/>
+
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/Kdp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="0.00"
+                android:textColor="@color/darkGrey2"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/kodchasan_bold"
+                android:id="@+id/winP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Win %"
+                android:textSize="13sp"
+                android:textColor="@color/darkGrey"/>
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/WinP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0.00 %"
+                android:textSize="16sp"
+                android:textColor="@color/darkGrey2"/>
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/WinPp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0.00 %"
+                android:textSize="16sp"
+                android:textColor="@color/darkGrey2"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:fontFamily="@font/kodchasan_bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/kpm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Kills per Match"
+                android:textSize="13sp"
+                android:textColor="@color/darkGrey"/>
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/KPM"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/darkGrey2"/>
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/KPMp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@color/darkGrey2"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:fontFamily="@font/kodchasan_bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/totalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Total Score"
+                android:textSize="13sp"
+                android:textColor="@color/darkGrey"/>
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/TotalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="@color/darkGrey2"/>
+
+            <TextView
+                android:fontFamily="@font/kodchasan_reg"
+                android:id="@+id/TotalScorep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textColor="@color/darkGrey2"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

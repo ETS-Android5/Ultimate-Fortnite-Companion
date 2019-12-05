@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fortnitebackground"
+    tools:context="com.elitelabs.fortnitetracker.SearchStats">
+
+
+
+    <LinearLayout
+        android:background="@color/darkGrey2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="Enter the name of the epic games account you would like to set as default  (your Epic name) "/>
+
+
+        <!-- Name-->
+        <android.support.v7.widget.CardView
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white">
+
+            <EditText
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="13dp"
+                android:id="@+id/searchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/kodchasan_bold"
+                android:hint="Epic Games Name"
+                android:textColorHint="@color/grey"
+                android:background="@color/white"
+                android:textColor="@color/grey2"
+                android:textSize="30sp" />
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="17dp"
+            android:background="@color/grey" />
+
+        <!-- Platform Selection-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/divider"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/xbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/kodchasan_bold"
+                android:gravity="center"
+                android:text="XBL"
+                android:textColor="@color/grey2"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/ps4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/kodchasan_bold"
+                android:gravity="center"
+                android:text="PS4"
+                android:textColor="@color/grey2"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/pc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/kodchasan_bold"
+                android:gravity="center"
+                android:text="PC"
+                android:textColor="@color/grey2"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="17dp"
+            android:background="@color/grey" />
+
+        <!-- Season Selection-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/lifetime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/kodchasan_bold"
+            android:gravity="center"
+            android:text="Lifetime"
+            android:textColor="@color/grey2"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seasonal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/kodchasan_bold"
+            android:gravity="center"
+            android:text="Season 9"
+            android:textColor="@color/grey2"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="17dp"
+            android:background="@color/grey" />
+
+        <!-- Information View -->
+        <LinearLayout
+            android:id="@+id/noAct"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white">
+                    <TextView
+                        android:id="@+id/getStats"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="7dp"
+                        android:fontFamily="@font/kodchasan_bold"
+                        android:text="Get Stats!"
+                        android:textSize="30sp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

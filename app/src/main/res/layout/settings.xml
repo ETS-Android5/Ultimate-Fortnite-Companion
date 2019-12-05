@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elitelabs.fortnitetracker.Settings"
+    android:background="@drawable/lightblueg2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Epic Name"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/epicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:hint="your name"
+            android:textSize="20sp"
+            android:background="@color/transparent"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+   <!-- <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default Page"
+            android:textSize="17sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/selection"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingVertical="2dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="My Stats"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/lightblue"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/leftarrow"
+            android:clickable="true"
+            android:layout_alignLeft="@+id/selection"/>
+        <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rightarrow"
+            android:clickable="true"
+            android:layout_alignRight="@+id/selection"/>
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/defaultPlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="Default Platform"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/defaultPlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/pc"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonstyle"
+            android:paddingHorizontal="5dp"
+            android:text="PC"
+            android:textColor="@color/darkblue" />
+
+        <Button
+            android:id="@+id/psn"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="3dp"
+            android:layout_toLeftOf="@+id/pc"
+            android:background="@drawable/buttonstyle"
+            android:paddingHorizontal="5dp"
+            android:text="PSN"
+            android:textColor="@color/darkblue" />
+
+        <Button
+            android:id="@+id/xbox"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="3dp"
+            android:layout_toLeftOf="@+id/psn"
+            android:background="@drawable/buttonstyle"
+            android:paddingHorizontal="5dp"
+            android:text="xbox"
+            android:textColor="@color/darkblue" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/statSeason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="Seasons"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/statSeason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/lifetime"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buttonstyle"
+                android:paddingHorizontal="5dp"
+                android:text="Lifetime"
+                android:textColor="@color/darkblue" />
+
+            <Button
+                android:id="@+id/seasonal"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="3dp"
+                android:layout_toLeftOf="@+id/psn"
+                android:background="@drawable/buttonstyle"
+                android:paddingHorizontal="5dp"
+                android:text="Season 9"
+                android:textColor="@color/darkblue" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/layoutView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="App Design"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layoutView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_gravity="right"
+                android:id="@+id/Legacy"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buttonstyle"
+                android:paddingHorizontal="5dp"
+                android:text="Legacy Design - OLD LAYOUT"
+                android:textColor="@color/darkblue" />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW LAYOUT: Pick a color for new design"
+                android:textSize="16sp"/>
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue"/>
+                <RadioButton
+                    android:id="@+id/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red"/>
+                <RadioButton
+                    android:id="@+id/purple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purple"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="17sp"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

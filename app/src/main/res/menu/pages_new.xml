@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/MyStats"
+            android:title="My Stats"
+            android:icon="@drawable/my_stats_icon"/>
+        <item
+            android:id="@+id/SearchStats"
+            android:title="Search Player"
+            android:icon="@drawable/search_icon"/>
+        <item
+            android:id="@+id/Compare"
+            android:icon="@drawable/compare_icon"
+            android:title="Compare Players" />
+        <item
+            android:id="@+id/ItemShop"
+            android:title="Item Shop"
+            android:icon="@drawable/item_shop_icon"/>
+        <item
+            android:id="@+id/Settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+    </group>
+
+   <item android:title="More!">
+        <menu>
+            <item
+                android:id="@+id/Feedback"
+                android:title="Feedback / Report Bugs" />
+            <item
+                android:id="@+id/Rate"
+                android:title="Rate This App!" />
+            <item
+                android:id="@+id/Share"
+                android:title="Share App" />
+            <!--<item
+                android:id="@+id/ShareStats"
+                android:title="Share Stats (Coming Soon)" />-->
+            <item
+                android:id="@+id/Help"
+                android:title="Help" />
+        </menu>
+    </item>
+
+
+</menu>

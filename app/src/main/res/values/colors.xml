@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#383c40</color>
+    <color name="colorPrimaryDark">#222629</color>
+    <color name="colorAccent">#802bb1</color> -->
+    <color name="grey">#c4c5c6</color>
+    <color name="white">#fff</color>
+    <color name="offwhite">#e7e7e7</color>
+    <color name="lightblue1">#C4D6EB</color>
+    <color name="lightblue2">#90A1C4</color>
+    <color name="lightblue">#c64c648f</color>
+    <color name="darkblue">#122145</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="shadowColor">#a5d6d5d5</color>
+
+    <color name="darkRare">#184c89</color>
+    <color name="darkRare1">#3282c7</color>
+    <color name="lightRare">#389ae1</color>
+    <color name="lightRare1">#31cafb</color>
+    <color name="darkUncommon">#245f19</color>
+    <color name="darkUncommon1">#43902d</color>
+    <color name="lightUncommon">#5ba736</color>
+    <color name="lightUncommon1">#6dc23a</color>
+    <color name="darkEpic">#4f257c</color>
+    <color name="darkEpic1">#8a44bd</color>
+    <color name="lightEpic">#b55be4</color>
+    <color name="lightEpic1">#dd60f5</color>
+    <color name="darkLegendary">#934323</color>
+    <color name="darkLegendary1">#c45a15</color>
+    <color name="lightLegendary1">#f1b558</color>
+    <color name="lightLegendary">#fe9e52</color>
+
+    <color name="colorPrimary">#6200ee</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#BB86FC</color>
+    <color name="darkGrey">#3c3c3c</color>
+    <color name="darkGrey2">#2e2e2e</color>
+    <color name="grey2">#5b5b5b</color>
+</resources>

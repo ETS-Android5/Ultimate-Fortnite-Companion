@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fortnitebackground"
+    tools:context="com.elitelabs.fortnitetracker.SearchStats">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tabs">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Enter the name of the epic games account you would like to set as default  (your Epic name) "/>
+        <EditText
+            android:id="@+id/searchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="20dp"
+            android:hint="Epic Games Name"
+            android:textColorLink="@color/darkblue"
+            android:background="@color/transparent"
+            android:textColor="#fff"
+            android:textSize="35sp"/>
+
+
+        <!-- Platform Buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Platform"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fortnite"
+            android:background="@drawable/topcorners">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/darkblueg">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/xbox"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00ffffff"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fortnite"
+                android:text="Xbox"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00ffffff"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fortnite"
+                android:text="PS4"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:id="@+id/ps4" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/pc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00ffffff"
+                android:text="PC"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fortnite"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+        <!-- Platform Buttons END -->
+
+        <!-- Season -->
+        <TextView
+            android:id="@+id/SEASON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Season"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fortnite"
+            android:background="@drawable/lightblueg">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/sButtons"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/darkblueg">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/lifetime"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="#00ffffff"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fortnite"
+                android:text="Lifetime"
+                android:textSize="17sp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00ffffff"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fortnite"
+                android:text="Season 9"
+                android:textAllCaps="false"
+                android:id="@+id/seasonal" />
+        </LinearLayout>
+
+        <!-- Season END -->
+
+
+        <!-- Information View -->
+        <LinearLayout
+            android:id="@+id/noAct"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/lightblueg">
+            </View>
+            <Button
+                android:id="@+id/getStats"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:background="@drawable/darkblueg"
+                android:gravity="center"
+                android:text="Get stats!"
+                android:fontFamily="@font/fortnite"
+                android:textSize="45dp"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@drawable/bottomcorners"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

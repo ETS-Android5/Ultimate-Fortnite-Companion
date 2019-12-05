@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fortnitebackground"
+    tools:context="com.elitelabs.fortnitetracker.MyStats">
+
+    <EditText
+        android:id="@+id/acctName"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text="Name"
+        android:background="@color/transparent"
+        android:fontFamily="@font/fortnite"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <!-- Platform Buttons -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Platform"
+            android:layout_marginHorizontal="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fortnite"
+            android:background="@drawable/topcorners">
+        </TextView>
+
+        <TextView
+            android:id="@+id/season"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="Season 9"
+            android:fontFamily="@font/fortnite"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/darkblueg">
+
+        <Button
+            android:id="@+id/xbox"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fortnite"
+            android:text="Xbox"
+            android:autoSizeTextType="uniform"
+            android:padding="10dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fortnite"
+            android:text="PS4"
+            android:autoSizeTextType="uniform"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/ps4" />
+
+        <Button
+            android:id="@+id/pc"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="PC"
+            android:autoSizeTextType="uniform"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fortnite"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <!-- Platform Buttons END -->
+
+
+    <!-- Information View -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingHorizontal="10dp"/>
+
+
+    <!-- Tabs (solo duo squad) -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lightblueg"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="?attr/colorPrimaryDark"/>
+
+
+</LinearLayout>

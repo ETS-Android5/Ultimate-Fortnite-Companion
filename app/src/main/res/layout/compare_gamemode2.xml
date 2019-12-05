@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- GAMEMODE - HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lightblueg"
+        android:gravity="center"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/fortnite"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="Solo"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/Matchesp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="15dp"
+            android:paddingVertical="3dp"
+            android:text="0 Matches"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Matches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingVertical="3dp"
+            android:text="0 Matches"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <!-- TOPS - BODY 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:background="@drawable/darkblueg">
+
+        <!-- Player 1 -->
+        <LinearLayout
+            android:id="@+id/p1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Wins"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:autoSizeTextType="uniform"/>
+
+                <TextView
+                    android:id="@+id/wins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/fortnite"
+                    android:text="Wins"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/grey" />
+
+                <View
+                    android:layout_width="75dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_marginBottom="3dp"
+                    android:background="#72abaaaa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Top2"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/top2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/fortnite"
+                    android:text="Top 10"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/grey" />
+
+                <View
+                    android:layout_width="75dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_marginBottom="3dp"
+                    android:background="#72abaaaa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Top3"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:autoSizeTextType="uniform"/>
+
+                <TextView
+                    android:id="@+id/top3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/fortnite"
+                    android:text="Top 25"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:background="#72abaaaa" />
+
+        <!-- Player 2 -->
+        <LinearLayout
+            android:id="@+id/p2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Winsp2"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:autoSizeTextType="uniform"/>
+
+                <TextView
+                    android:id="@+id/winsp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/fortnite"
+                    android:text="Wins"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/grey" />
+
+                <View
+                    android:layout_width="75dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_marginBottom="3dp"
+                    android:background="#72abaaaa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Top2p2"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:autoSizeTextType="uniform"/>
+
+                <TextView
+                    android:id="@+id/top2p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/fortnite"
+                    android:text="Top 10"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/grey" />
+
+                <View
+                    android:layout_width="75dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"
+                    android:background="#72abaaaa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Top3p2"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/fortnite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:autoSizeTextType="uniform"/>
+
+                <TextView
+                    android:id="@+id/top3p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/fortnite"
+                    android:text="Top 25"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- STATS - BODY 2 -->
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/lightblue">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/kills"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Kills"
+                android:textSize="13sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/Kills"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Killsp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="@color/darkblue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/lightblue">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/kd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="K/d"
+                android:textSize="13sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/Kd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0.00"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Kdp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0.00"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="@color/darkblue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/lightblue">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/winP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Win %"
+                android:textSize="13sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/WinP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0.00 %"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/WinPp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0.00 %"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="@color/darkblue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/lightblue">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/kpm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Kills per Match"
+                android:textSize="13sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/KPM"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/KPMp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="@color/darkblue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:background="@color/lightblue">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/totalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+                android:text="Total Score"
+                android:textSize="13sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/TotalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/TotalScorep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/bottomcorners"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
