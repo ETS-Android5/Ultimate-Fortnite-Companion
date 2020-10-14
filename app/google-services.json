@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "815041496574",
+    "firebase_url": "https://fortnite-4db02.firebaseio.com",
+    "project_id": "fortnite-4db02",
+    "storage_bucket": "fortnite-4db02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815041496574:android:94ba8f386a2cea6a",
+        "android_client_info": {
+          "package_name": "com.elitelabs.fortnitetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815041496574-oengd5r89roqm77ivl54d9migbrp6bup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elitelabs.fortnitetracker",
+            "certificate_hash": "ebf7403f4de94b1db685db2037a2c941027ad523"
+          }
+        },
+        {
+          "client_id": "815041496574-m58k99f6phkphsup08ncet4folaba834.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elitelabs.fortnitetracker",
+            "certificate_hash": "8fedfe5eccafa524b62c093b25de730e194ea2a8"
+          }
+        },
+        {
+          "client_id": "815041496574-b2k68gpmjl5l54bfv06n54r3oa7p3bfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTFuaj-Wwo1-B-9cisU1GMw_bTpzBBRGc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815041496574-b2k68gpmjl5l54bfv06n54r3oa7p3bfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-7215660139227978~9728959987"
+    }
+  ],
+  "configuration_version": "1"
+}
