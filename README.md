@@ -10,3 +10,5 @@ Sample Screenshots that were posted to the Google Play store before the app was 
   <img src="https://github.com/BenRaymon/Ultimate-Fortnite-Companion/blob/master/Graphics/New%20Screenshots/ItemShop.png?raw=true" width="300" >
   
 </p>
+
+Ben Raymon, 2018
